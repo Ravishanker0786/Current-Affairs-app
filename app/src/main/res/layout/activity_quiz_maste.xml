@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Admin.Quiz.QuizMaste">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Question :-"
+                android:layout_weight="3"
+                android:textColor="#00008b"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:hint="Enter Question"
+                android:gravity="top|left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:lines="5"
+                android:maxLines="5"
+                android:layout_weight="7"
+                android:id="@+id/ques_quiz"
+                android:textColor="#00008b"
+                android:textSize="18dp"
+                android:background="@drawable/border"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Option 1 :-"
+                android:layout_weight="3"
+                android:textColor="#00008b"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/op1_quiz"
+                android:hint="Enter Option 1"
+                android:singleLine="true"
+                android:textColor="#00008b"
+                android:textSize="18dp"
+                android:layout_weight="7"
+                android:background="@drawable/border"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Option 2 :-"
+                android:layout_weight="3"
+                android:textColor="#00008b"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/op2_quiz"
+                android:hint="Enter option 2"
+                android:singleLine="true"
+                android:layout_weight="7"
+                android:textColor="#00008b"
+                android:textSize="18dp"
+                android:background="@drawable/border"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Option 3 :-"
+                android:textColor="#00008b"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_weight="3"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/op3_quiz"
+                android:hint="Enter Option 3"
+                android:singleLine="true"
+                android:textColor="#00008b"
+                android:textSize="18dp"
+                android:layout_weight="7"
+                android:background="@drawable/border"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Option 4 :-"
+                android:textColor="#00008b"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_weight="3"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/op4_quiz"
+                android:hint="Enter Option 4"
+                android:singleLine="true"
+                android:textColor="#00008b"
+                android:textSize="18dp"
+                android:layout_weight="7"
+                android:background="@drawable/border"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Answer :-"
+                android:textColor="#00008b"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_weight="3"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ans_quiz"
+                android:hint="Enter Answer"
+                android:singleLine="true"
+                android:textColor="#00008b"
+                android:textSize="18dp"
+                android:layout_weight="7"
+                android:background="@drawable/border"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="18dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_weight="5"
+                android:layout_gravity="center"
+                android:id="@+id/submit_quiz"
+                android:background="@drawable/full_bg"
+                android:textColor="@android:color/background_light"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

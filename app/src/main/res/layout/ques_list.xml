@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="10"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="sr"
+        android:layout_weight="1"
+        android:textSize="22dp"
+        android:textAlignment="center"
+        android:id="@+id/sr_queslist"
+        android:textColor="#00008b"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/head_queslist"
+        android:paddingLeft="10dp"
+        android:layout_weight="9"
+        android:text="header"
+        android:textSize="22dp"
+        android:textColor="#00008b"
+        android:textStyle="bold"/>
+
+</LinearLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/heading"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/dialog_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Settings"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/close_btn"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/close"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <LinearLayout
+        android:layout_below="@id/heading"
+        android:layout_width="match_parent"
+        android:id="@+id/content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_setting_item">
+
+            <ImageView
+                android:id="@+id/about_img"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:padding="10dp"
+                android:src="@drawable/about_us" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:layout_toRightOf="@+id/about_img"
+                android:text="About US"
+                android:textAlignment="center"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/contact_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_setting_item">
+
+            <ImageView
+                android:id="@+id/contact_img"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:padding="10dp"
+                android:src="@drawable/phone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:layout_toRightOf="@+id/contact_img"
+                android:text="Contact Us"
+                android:textAlignment="center"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/privacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_setting_item">
+
+            <ImageView
+                android:id="@+id/privacy_img"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:padding="10dp"
+                android:src="@drawable/privacy1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:layout_toRightOf="@+id/privacy_img"
+                android:text="Privacy Policy"
+                android:textAlignment="center"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_setting_item">
+            <Switch
+                android:id="@+id/notification_switch"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:switchMinWidth="60dp"
+                android:padding="10dp"
+                android:textOff="OFF"
+                android:textOn="ON"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:layout_toRightOf="@+id/notification_switch"
+                android:text="Notification"
+                android:textAlignment="center"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_setting_item">
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/signin_img"-->
+<!--                android:layout_width="90dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:padding="10dp"-->
+<!--                android:src="@drawable/gooogle" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginLeft="0dp"-->
+<!--                android:layout_toRightOf="@+id/signin_img"-->
+<!--                android:text="Sign IN"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19dp"-->
+<!--                android:textStyle="bold" />-->
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/google_log_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@drawable/border_setting_item">
+
+<!--            <ImageView-->
+<!--                android:id="@+id/g_log_out_img"-->
+<!--                android:layout_width="90dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:padding="10dp"-->
+<!--                android:src="@drawable/gooogle" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+
+                android:text="Log out"
+                android:textAlignment="center"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@color/nblue"
+    tools:context=".Admin.AdminView">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25dp">
+
+        <Button
+            android:id="@+id/topics"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:text="Topics"
+            android:textColor="#0062cc"
+            android:background="@android:color/white"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25dp"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/news"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:text="news"
+            android:textColor="#0062cc"
+            android:background="@android:color/white"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25dp"
+        android:visibility="gone"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/quiz"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:text="Quiz"
+            android:textColor="#0062cc"
+            android:background="@android:color/white"/>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

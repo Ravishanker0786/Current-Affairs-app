@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.prinfosys.news48">
+
+    <uses-sdk tools:overrideLibrary="io.codetail.view" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Admin.Insight.InsightViewPager"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light"/>
+        <activity
+            android:name=".Admin.Insight.InsightAdminView"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".QuizView"
+            android:exported="true" />
+        <activity
+            android:name=".Admin.Quiz.QuizMain"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".GmailSignIn"
+            android:exported="true" />
+        <activity
+            android:name=".AboutPrivacyContact"
+            android:exported="true" />
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+        <activity
+            android:name=".Admin.Quiz.QuizShow"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".Admin.Quiz.QuizMaste"
+            android:theme="@style/Theme.Design.Light" />
+        <activity android:name=".Right" />
+        <activity
+            android:name=".Left"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity android:name="._SwipeActivityClass" />
+        <activity android:name=".demo.Demo" />
+        <activity android:name=".NewsWebView" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".Admin.AdminView"
+            android:theme="@style/Theme.Design.Light">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".Admin.topic.ShowTopic"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".Admin.topic.TopicActivity"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".Admin.ShowNew"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".Admin.AddNews"
+            android:theme="@style/Theme.Design.Light" />
+        <activity android:name=".Admin.AdminLogin" />
+
+        <service android:name=".MyMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

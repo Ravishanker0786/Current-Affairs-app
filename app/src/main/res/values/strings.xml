@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Current Affairs</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="admob_app_id">ca-app-pub-5928876190344084~2692866897</string>
+    <string name="admob_banner_id">ca-app-pub-5928876190344084/8864072316</string>
+    <!--    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>-->
+    <!--    <string name="admob_banner_id">ca-app-pub-3940256099942544/6300978111</string>-->
+    <string name="admob_interstitial"></string>
+
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="category"><b><u>CATEGORIES</u></b></string>
+    <string name="setting"><b><u>SETTINGS</u></b></string>
+    <string name="topic"><b><u>TOPICS</u></b></string>
+    <string name="discover"><b><u>Discover</u></b></string>
+    <string name="fcm_message">testing</string>
+    <string name="default_notification_channel_id">334</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Current Affairs App by Topprsiq.com</string>
+    <string name="slide_1_desc">Right swipe on main screen to open home screen.\nClick on calendar for find news according to datewise</string>
+
+    <string name="slide_2_title">Daily Current Affairs</string>
+    <string name="slide_2_desc">Left swipe on news to see detailed news.\n
+        Upper swipe for recent news , lower swipe for old news. </string>
+</resources>

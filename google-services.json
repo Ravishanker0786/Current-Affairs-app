@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "900517573093",
+    "project_id": "current-affairs-app-1737c",
+    "storage_bucket": "current-affairs-app-1737c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900517573093:android:0ca357f0db27c652cb7f0c",
+        "android_client_info": {
+          "package_name": "com.prinfosys.news48"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "900517573093-si2gdf76l1dd02bo34i78lru5uisjo23.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKxtnzljlGPh0ZI7HUfj40LfY_dZ7Iy_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "900517573093-si2gdf76l1dd02bo34i78lru5uisjo23.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

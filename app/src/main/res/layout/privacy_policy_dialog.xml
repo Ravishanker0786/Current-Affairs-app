@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <WebView
+        android:id="@+id/privacy"
+        android:layout_alignParentLeft="true"
+        android:visibility="visible"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"/>
+
+    <RelativeLayout
+        android:id="@+id/btnNo"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:elevation="20dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/cicle_cross_red">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="2dp"
+            android:paddingBottom="12dp"
+            android:src="@drawable/cancel" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

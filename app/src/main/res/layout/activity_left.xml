@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:textAlignment="center"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:showAsAction="ifRoom"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <!--the root view must be the DrawerLayout-->
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/my_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".MainActivity"
+        tools:ignore="HardcodedText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+
+                <!--            <RelativeLayout-->
+                <!--                android:id="@+id/top"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="27dp"-->
+                <!--                android:layout_gravity="center"-->
+                <!--                android:layout_marginBottom="10dp"-->
+                <!--                android:visibility="visible">-->
+
+                <!--                <RelativeLayout-->
+                <!--                    android:id="@+id/bc"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content">-->
+
+                <!--                    <Button-->
+                <!--                        android:id="@+id/bccc"-->
+                <!--                        android:layout_width="30dp"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginLeft="3dp"-->
+                <!--                        android:layout_marginTop="4dp"-->
+                <!--                        android:background="@drawable/about_1" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:layout_marginLeft="-5dp"-->
+                <!--                        android:layout_toRightOf="@+id/bccc"-->
+                <!--                        android:paddingTop="8dp"-->
+                <!--                        android:text="About/Contact"-->
+                <!--                        android:textSize="12sp" />-->
+                <!--                </RelativeLayout>-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/txt1"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="25dp"-->
+                <!--                    android:layout_centerHorizontal="true"-->
+                <!--                    android:text="@string/discover"-->
+                <!--                    android:textColor="@color/mblue"-->
+                <!--                    android:textSize="20dp"-->
+                <!--                    android:textStyle="bold" />-->
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:id="@+id/setting_modal"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:layout_toStartOf="@+id/retur"-->
+                <!--                    android:src="@drawable/ic_baseline_settings_24" />-->
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/retur"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:layout_alignParentRight="true"-->
+                <!--                    android:padding="2dp"-->
+                <!--                    android:src="@drawable/right_arrow" />-->
+
+                <!--            </RelativeLayout>-->
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:id="@+id/search_layout"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:weightSum="10">
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="9"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <EditText
+                            android:id="@+id/stext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/search"
+
+                            android:hint="Search"
+                            android:text="" />
+
+                        <ImageView
+                            android:id="@+id/search"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="0dp"
+                            android:layout_centerVertical="true"
+                            android:padding="3dp"
+                            android:src="@drawable/search"
+                            app:tint="@color/colorPrimaryDark" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/calender"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:padding="3dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/calendar" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/nblue"
+                    />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/nblue"
+                    />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/quiz_menu"
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/border"
+                            android:textColor="@color/nblue"
+                            android:text="Quiz" />
+
+                        <Button
+                            android:id="@+id/insights_menu"
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/border"
+                            android:textColor="@color/nblue"
+                            android:text="insights" />
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/nblue"
+                        android:text="@string/category"
+                        />
+
+                </LinearLayout>
+
+                <!--    <View-->
+                <!--        android:layout_width="match_parent"-->
+                <!--        android:layout_height="1dp"-->
+                <!--        android:background="@color/nblue"-->
+                <!--        />-->
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:weightSum="10">
+
+
+                        <LinearLayout
+                            android:id="@+id/myfeedl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:layout_marginRight="5dp"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/myfeed"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:padding="15dp"
+                                android:src="@drawable/topstories" />
+
+                            <TextView
+                                android:id="@+id/myfeedtxt"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textSize="10dp"
+                                android:paddingBottom="5dp"
+                                android:textColor="@color/nblue"
+                                android:text="MY FEED" />
+
+                        </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/all"
+                            android:background="@drawable/border"
+                            android:layout_marginRight="5dp"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/allnews"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:padding="15dp"
+                                android:src="@drawable/allnews" />
+
+                            <TextView
+                                android:id="@+id/allnewstxt"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:gravity="center"
+                                android:textSize="10dp"
+                                android:paddingBottom="5dp"
+                                android:textColor="@color/nblue"
+                                android:text="ALL NEWS" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:layout_marginRight="5dp"
+                            android:visibility="gone"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/Topstories"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:padding="15dp"
+                                android:src="@drawable/topstories" />
+
+                            <TextView
+                                android:id="@+id/topstoriestxt"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:gravity="center"
+                                android:textSize="10dp"
+                                android:paddingBottom="5dp"
+                                android:textColor="@color/nblue"
+                                android:text="TOP STORIES" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/trndgl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/trndg"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:padding="15dp"
+                                android:src="@drawable/trending" />
+
+                            <TextView
+                                android:id="@+id/trndgtxt"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:gravity="center"
+                                android:textSize="10dp"
+                                android:paddingBottom="5dp"
+                                android:textColor="@color/nblue"
+                                android:text="RECENTS" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:id="@+id/st"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/nblue"
+                        android:text="@string/topic" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    >
+
+
+
+                    <com.prinfosys.news48.CustomGridView
+                        android:id="@+id/grid_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:columnWidth="100dp"
+                        android:drawSelectorOnTop="true"
+                        android:gravity="center"
+                        android:numColumns="3"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="5dp"
+                        android:horizontalSpacing="5dp"
+                        android:focusable="true"
+                        android:clickable="true"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <!--this the navigation view which draws
+            and shows the navigation drawer-->
+        <!--include the menu created in the menu folder-->
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/navigation_view"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/header_navigation_drawer"
+            app:menu="@menu/navigation_menu" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>
